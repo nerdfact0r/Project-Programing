@@ -16,7 +16,9 @@ def redintro():
   her and would be back soon.
   """
   raw_input()
-  print "two weeks later"
+  print """
+  two weeks later
+  """
   raw_input()
   print """
   Red was sitting next to the door waiting. Her parents had left
@@ -38,16 +40,40 @@ def redintro():
   """
 
 def wolfIntro():
+  raw_input()
+  print """
+  You are laying in bed morning the loss of your parents and you can hear the
+  slow drops of rain on your roof...
+  """
+  raw_input()
+  print """
+  Suddenly there is a knock on the door
+  """
+  raw_input()
+
+def princeIntro():
+  global wolfSword
+  if wolfSword == True:
     print """
-    You are laying in bed morning the loss of your parents and you can hear the
-    slow drops of rain on your roof...
+    It's been five day's since my confrontation with Wolf. Five days that I've
+    been carying his sword. Five days since I've found cheshire cat. Five days
+    Since I've enbarked on my quest to destroy all of the brothehood and make
+    sure no one ever has to suffer the way I did again.
     """
-    raw_input()
-    print """
-    Suddenly there is a knock on the door
+  else:
+    print"""
+    It's been five day's since my confrontation with Wolf. Five days since 
+    I've found cheshire cat. Five days since I've enbarked on my quest to destroy all 
+    of the brothehood and make sure no one ever has to suffer the way I did again.
     """
-    
+#below this is the global variable libary.
+
+wolfSword = False #whether or not red chose to take scrooges sword
+
+
+#below this is the story.
 redintro()
 
 wolfIntro()
 
+princeIntro()
